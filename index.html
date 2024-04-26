@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tania</title>
+    <link rel="website icon" href="R.jpg">
+</head>
+<body>
+    <header>
+    <h2>Dados do contribuinte</h2>
+    <hr>
+</header>
+<form action="pg_.php">
+Nome:<input type="text" required size="50"><br>
+CPF: <input type="text" value="Apenas Números!" required><br>
+RG: <input type="text" required>
+Órgão Emissor: <input type="text" required><br>
+Profissão: <input type="text" required><br>
+Título de Eleitor: <input type="nunber" required><br>
+Estado Cívil: 
+<input type="radio" name="est1" value="1">Solteiro 
+<input type="radio" name="est1" value="2">Casado 
+<input type="radio" name="est1" value="3">Víuvo
+<br>
+Data de Nascimento: <input type="date">
+Sexo:
+<input type="radio" name="est1" value="2">Masculino
+<input type="radio" name="est1" value="3">Feminino
+<br>
+Rua: <input type="text" size="50">N*: <input type="text"><br>
+Bairro: <input type="text">Cidade <input type="text"><br>
+UF: <select name="uf_cont" id="">
+    <option value="1">AC-Acre</option>
+    <option value="2">AL-Alagoas</option>
+    <option value="3">AP-Amapá</option>
+    <option value="4">AM-Amazonas</option>
+    <option value="5">BA-Bahia</option>
+    <option value="6">CE-Ceará</option>
+    <option value="7">DF-Distrito Federal</option>
+    <option value="8">ES-Espírito Santo</option>
+    <option value="9">GO-Goiás	</option>
+    <option value="10">MA-Maranhão</option>
+    <option value="11">MT-Mato Grosso</option>
+    <option value="12">MS-Mato Grosso do Sul</option>
+    <option value="13">MG-Minas Gerais</option>
+    <option value="14">PA-Pará</option>
+    <option value="15">PB-Paraíba</option>
+    <option value="16">PR-Paraná</option>
+    <option value="17">PE-Pernambuco</option>
+    <option value="18">PI-Piauí</option>
+    <option value="19">RJ-Rio de Janeiro</option>
+    <option value="20">RN-Rio Grande do Norte</option>
+    <option value="21">RS-Rio Grande do Sul</option>
+    <option value="22">RO-Rondônia</option>
+    <option value="23">RR-Roraima</option>
+    <option value="24">SC-Santa Catarina</option>
+    <option value="25">SP-São Paulo</option>
+    <option value="26">SESergipe-</option>
+    <option value="27">TO-Tocantins</option>
+</select>
+CEP: <input type="number"><br>
+Telefone Fixo: <input type="text">Celular/Whastsapp: <input type="text"><br>
+Email: <input type="email">
+Escolaridade: <select name="uf_Esc" id="">
+    <option value="1">Sem escolaridade</option>
+    <option value="2">Fundamental 1</option>
+    <option value="3">Fundamental 2</option>
+    <option value="4">Médio (Antigo grau)</option>
+    <option value="5">Supérior incompleto</option>
+    <option value="6">Superior completo</option>
+    <option value="7">Não informar</option>
+</select>
+<br>
+    Rendimento Familiar Mensal: <input type="Number"> <br>
+    Número de membros da familia: <input type="number">
+    <hr>
+    <h2>Dados gerais da empresa</h2>
+    Nome fantasia: <input type="text" size="50"><br>
+    Razão Social: <input type="text"><br>
+    CNPJ: <input type="text"><br>
+    Código de acesso: <input type="text"><br>
+    N* de recibo do IR (se for necessário): <input type="text"><br>
+    Rua: <input type="text" size="50"><br>
+    Bairro: <input type="text">Cidade: <input type="text"><br>
+    UF: <select name="uf_cont" id="">
+        <option value="1">AC-Acre</option>
+        <option value="2">AL-Alagoas</option>
+        <option value="3">AP-Amapá</option>
+        <option value="4">AM-Amazonas</option>
+        <option value="5">BA-Bahia</option>
+        <option value="6">CE-Ceará</option>
+        <option value="7">DF-Distrito Federal</option>
+        <option value="8">ES-Espírito Santo</option>
+        <option value="9">GO-Goiás	</option>
+        <option value="10">MA-Maranhão</option>
+        <option value="11">MT-Mato Grosso</option>
+        <option value="12">MS-Mato Grosso do Sul</option>
+        <option value="13">MG-Minas Gerais</option>
+        <option value="14">PA-Pará</option>
+        <option value="15">PB-Paraíba</option>
+        <option value="16">PR-Paraná</option>
+        <option value="17">PE-Pernambuco</option>
+        <option value="18">PI-Piauí</option>
+        <option value="19">RJ-Rio de Janeiro</option>
+        <option value="20">RN-Rio Grande do Norte</option>
+        <option value="21">RS-Rio Grande do Sul</option>
+        <option value="22">RO-Rondônia</option>
+        <option value="23">RR-Roraima</option>
+        <option value="24">SC-Santa Catarina</option>
+        <option value="25">SP-São Paulo</option>
+        <option value="26">SESergipe-</option>
+        <option value="27">TO-Tocantins</option>
+    </select>
+    CEP: <input type="number"><br>
+    Telefone: <input type="number"><br>
+    Email: <input type="email"><br>
+    Gera Faturamento: 
+    <input type="radio" name="fat1" value="1">Sim 
+    <input type="radio" name="fat1" value="2">Não
+<br>
+Quanto? (Valor médio mensal): <input type="number"><br>
+Segmento de negócio:
+<select name="seg" id="">
+    <option value="1">Comércio</option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    </select>
+    <br>
+Data de abertura: <input type="date"><br>
+Tem funcionário: 
+<input type="radio" name="funcio" value="1">Sim 
+<input type="radio" name="funcio" value="2">Não <br>
+Demenda da empresa: <br>
+<textarea name="" id="" cols="50" rows="4"></textarea>
+ <br>
+<input type="submit" value="Enviar Dados">
+</form>
+</body>
+</html>
