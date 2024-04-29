@@ -14,7 +14,7 @@
 </header>
 <form action="pg_.php">
 Nome:<input type="text" required size="50"><br>
-CPF: <input type="text" value="Apenas Números!" required><br>
+CPF: <input type="text"required><br>
 RG: <input type="text" required>
 Órgão Emissor: <input type="text" required><br>
 Profissão: <input type="text" required><br>
@@ -29,9 +29,9 @@ Sexo:
 <input type="radio" name="est1" value="2">Masculino
 <input type="radio" name="est1" value="3">Feminino
 <br>
-Rua: <input type="text" size="50">N*: <input type="text"><br>
-Bairro: <input type="text">Cidade <input type="text"><br>
-UF: <select name="uf_cont" id="">
+Rua: <input type="text" size="50" required>N*: <input type="text"><br>
+Bairro: <input type="text" required>Cidade <input type="text"><br>
+UF: <select name="uf_cont" id="" required>
     <option value="1">AC-Acre</option>
     <option value="2">AL-Alagoas</option>
     <option value="3">AP-Amapá</option>
@@ -60,10 +60,10 @@ UF: <select name="uf_cont" id="">
     <option value="26">SESergipe-</option>
     <option value="27">TO-Tocantins</option>
 </select>
-CEP: <input type="number"><br>
-Telefone Fixo: <input type="text">Celular/Whastsapp: <input type="text"><br>
-Email: <input type="email">
-Escolaridade: <select name="uf_Esc" id="">
+CEP: <input type="number" required><br>
+Telefone Fixo: <input type="text" required>Celular/Whastsapp: <input type="text" required><br>
+Email: <input type="email" required>
+Escolaridade: <select name="uf_Esc" id="" required>
     <option value="1">Sem escolaridade</option>
     <option value="2">Fundamental 1</option>
     <option value="3">Fundamental 2</option>
@@ -73,18 +73,18 @@ Escolaridade: <select name="uf_Esc" id="">
     <option value="7">Não informar</option>
 </select>
 <br>
-    Rendimento Familiar Mensal: <input type="Number"> <br>
-    Número de membros da familia: <input type="number">
+    Rendimento Familiar Mensal: <input type="Number" required> <br>
+    Número de membros da familia: <input type="number" required>
     <hr>
     <h2>Dados gerais da empresa</h2>
-    Nome fantasia: <input type="text" size="50"><br>
-    Razão Social: <input type="text"><br>
-    CNPJ: <input type="text"><br>
-    Código de acesso: <input type="text"><br>
-    N* de recibo do IR (se for necessário): <input type="text"><br>
-    Rua: <input type="text" size="50"><br>
-    Bairro: <input type="text">Cidade: <input type="text"><br>
-    UF: <select name="uf_cont" id="">
+    Nome fantasia: <input type="text" size="50" required><br>
+    Razão Social: <input type="text" required><br>
+    CNPJ: <input type="text" required><br>
+    Código de acesso: <input type="text" required><br>
+    N* de recibo do IR (se for necessário): <input type="text" required><br>
+    Rua: <input type="text" size="50" required><br>
+    Bairro: <input type="text">Cidade: <input type="text" required><br>
+    UF: <select name="uf_cont" id="" required>
         <option value="1">AC-Acre</option>
         <option value="2">AL-Alagoas</option>
         <option value="3">AP-Amapá</option>
@@ -113,30 +113,29 @@ Escolaridade: <select name="uf_Esc" id="">
         <option value="26">SESergipe-</option>
         <option value="27">TO-Tocantins</option>
     </select>
-    CEP: <input type="number"><br>
-    Telefone: <input type="number"><br>
-    Email: <input type="email"><br>
+    CEP: <input type="number" required><br>
+    Telefone: <input type="number" required><br>
+    Email: <input type="email" required><br>
     Gera Faturamento: 
-    <input type="radio" name="fat1" value="1">Sim 
-    <input type="radio" name="fat1" value="2">Não
+    <input type="radio" name="fat1" value="1" required>Sim 
+    <input type="radio" name="fat1" value="2" required>Não
 <br>
-Quanto? (Valor médio mensal): <input type="number"><br>
+Quanto? (Valor médio mensal): <input type="number" required><br>
 Segmento de negócio:
-<select name="seg" id="">
+<select name="seg" id="" required>
     <option value="1">Comércio</option>
-    <option value="2"></option>
-    <option value="3"></option>
-    <option value="4"></option>
+    <option value="2">Serviço</option>
+    <option value="3">Indústria</option>
     </select>
     <br>
-Data de abertura: <input type="date"><br>
+Data de abertura: <input type="date" required><br>
 Tem funcionário: 
 <input type="radio" name="funcio" value="1">Sim 
 <input type="radio" name="funcio" value="2">Não <br>
 Demenda da empresa: <br>
 <textarea name="" id="" cols="50" rows="4"></textarea>
  <br>
-<input type="submit" value="Enviar Dados">
+<input type="submit" value="Enviar Dados" required>
 </form>
 </body>
 </html>
